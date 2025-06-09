@@ -9,7 +9,7 @@
     "types:check": "pnpm -r --parallel run typecheck",
     "test": "vitest",
     "test:ci": "vitest run && pnpm cypress:ci",
-    "storybook": "BROWSER=none pnpm --filter=@repo/storybook run dev -p 9009",
+    "storybook": "pnpm --filter=@repo/storybook run dev -p 9009",
     "cypress:ci": "start-server-and-test 'pnpm dev' http://localhost:9009 'pnpm cypress:install && pnpm cypress:run'",
     "cypress:install": "cypress install",
     "cypress:run": "cypress run",
